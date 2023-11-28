@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Inserimento Dati Anagrafici</h2>
+
+    <form action="/processa_dati.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+    
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" name="cognome" required>
+        <br>
+    
+        <label for="email">Indirizzo Email:</label>
+        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|it)" title="Inserisci un indirizzo email valido (.com o .it)" required>
+        <br>
+    
+        <label for="documento">Documento di Riconoscimento:</label>
+        <input type="text" id="documento" name="documento" required>
+        <br>
+    
+        <input type="submit" value="Invia Dati">
+    </form>
+    
+</body>
+</html>
